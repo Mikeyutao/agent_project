@@ -1,7 +1,7 @@
 #管理配置文件
 
 import yaml
-from path_tool import get_abs_path
+from utils.path_tool import get_abs_path
 
 #多个不同的配置文件
 def load_rag_config(config_path: str=get_abs_path("config/rag.yml"), encoding: str="utf-8"):
@@ -32,3 +32,4 @@ agent_conf = load_agent_config()
 
 if __name__ == '__main__':
     print(rag_conf["chat_model_name"])
+    print(chroma_conf["persist_directory"])

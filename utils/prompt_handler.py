@@ -2,9 +2,9 @@
 #中，通过代码加载，同时也方便后续修改
 
 
-from config_handler import prompts_conf
-from path_tool import get_abs_path
-from logger_handler import logger
+from utils.config_handler import prompts_conf
+from utils.path_tool import get_abs_path
+from utils.logger_handler import logger
 
 
 def load_system_prompts():
